@@ -1,0 +1,30 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HeroeComponent } from './pages/heroe/heroe.component';
+import { HeroesComponent } from './pages/heroes/heroes.component';
+
+// para  trabajar con los formularios reactivos
+import { FormsModule } from '@angular/forms';
+
+//para trabajar con las peticiones http
+import { HttpClientModule } from '@angular/common/http';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeroeComponent,
+    HeroesComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
